@@ -1,0 +1,55 @@
+body{
+    background-image: linear-gradient(hotpink,cyan);
+    height: 95vh;
+    font-family: cursive;
+}
+h1,h2{
+    text-align:center;
+}
+h2{
+    transition:transform 5s;
+    transform:rotate(360deg);
+}
+.gameboard{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:70vh;
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height:100px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:3px solid whitesmoke;
+    font-size:20px;
+    cursor:pointer;
+    transition: transform 0.5s;
+}
+.box.clicked{
+    
+    transform: rotate(180deg);
+    background-image: linear-gradient(blue,hotpink);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding:10px 20px;
+    color:white;
+    font-size: 20px;
+    background-color:hotpink;
+    border-radius: 50px;
+    border-style:solid;
+    border-width:5px;
+    cursor: pointer;
+}
